@@ -31,7 +31,7 @@ def handle_message(event):
     escaped_message = html.escape(event.message.text)  # 使用 html.escape
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=escaped_message))
+        TextSendMessage(text='第34行裡的test=修改成想傳送的文字'))
 
 if __name__ == "__main__":
     app.run()
