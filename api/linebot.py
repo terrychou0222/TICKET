@@ -28,10 +28,14 @@ def callback():
 
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    escaped_message = html.escape(event.message.text)  # 使用 html.escape
+    if event.message.text.lower() == "test":
+        reply_message = "這是一個測試訊息！"
+    else:
+        reply_message = event.message.text
+    
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text='第34行裡的test=修改成想傳送的文字'))
+        TextSendMessage(text=reply_message))
 
 if __name__ == "__main__":
     app.run()
