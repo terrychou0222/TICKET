@@ -29,7 +29,7 @@ def callback():
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if event.message.text.lower() == "test":
-        reply_message = "這是一個測試訊息！"
+        reply_message = "第32行的reply_message=改成自己想傳送的訊息"
     else:
         reply_message = event.message.text
     
