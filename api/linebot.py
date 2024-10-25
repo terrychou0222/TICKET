@@ -55,7 +55,7 @@ def check_tickets():
                     print(f"发送消息时出错: {e}")
 
             current_time = time.time()
-            if current_time - last_reminder_time >= 1800:  # 30分钟
+            if current_time - last_reminder_time >= 1:  # 30分钟
                 try:
                     line_bot_api.push_message(
                         "Ubebfaa8b88c85bfa30b27c32bbb73734",
