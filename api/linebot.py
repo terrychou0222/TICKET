@@ -66,7 +66,11 @@ def check_tickets():
 
 @app.route('/')
 def home():
+    print("hi")
+    
     return '你好非！'
+    
+    
 
 
 
