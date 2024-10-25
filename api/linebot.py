@@ -1,23 +1,10 @@
 from flask import Flask
-from bs4 import BeautifulSoup
-import requests
-import datetime
-import time
-import threading
-import os
-from linebot import LineBotApi, WebhookHandler
-from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessage, StickerSendMessage, ImageSendMessage, LocationSendMessage
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
-
-
-
-
+    return '你好，世界！'
 
 if __name__ == "__main__":
- 
+    app.run()
