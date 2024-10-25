@@ -67,7 +67,8 @@ def check_tickets():
 @app.route('/')
 def home():
     return '你好非！'
-    print("hi)
+
+
 
 # 启动票务检查线程
 if __name__ == "__main__":
