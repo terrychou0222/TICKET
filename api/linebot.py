@@ -62,7 +62,7 @@ while True:
 
     # 每半小时发送一次程序运行状态
     current_time = time.time()
-    if current_time - last_reminder_time >= 3600:  # 1800秒 = 30分钟
+    if current_time - last_reminder_time >= 2:  # 1800秒 = 30分钟
         try:
             line_bot_api.push_message(
     "Ubebfaa8b88c85bfa30b27c32bbb73734",
@@ -75,7 +75,7 @@ while True:
             print(f"发送状态消息时出错: {e}")
 
     # 等待10秒
-    time.sleep(1)
+    time.sleep(10)
 
 
 
