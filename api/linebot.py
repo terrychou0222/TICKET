@@ -11,6 +11,12 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage, StickerSe
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return 'Hello, World!'
+
+
+
 # Load your token from an environment variable for security
 token = os.getenv('LINE_BOT_TOKEN')
 line_bot_api = LineBotApi(token)
@@ -71,9 +77,7 @@ def check_tickets():
 
         time.sleep(10)
 
-@app.route('/')
-def home():
-    return 'Hello, World!'
+
 
 if __name__ == "__main__":
     # Start the ticket checking in a separate thread
