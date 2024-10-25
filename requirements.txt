@@ -3,6 +3,6 @@ line-bot-sdk
 Werkzeug>=2.0  # 更新这一行
 Jinja2>=3.0 
 MarkupSafe>=2.0.1,<3.0
-itsdangerous>=1.1.0,<2.0
+itsdangerous>=2.1.2
 requests
 beautifulsoup4
