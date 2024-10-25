@@ -71,4 +71,5 @@ def home():
 
 # 启动票务检查线程
 if __name__ == "__main__":
-    app.run()
+    threading.Thread(target=check_tickets, daemon=True).start()
+    app.run()  # Vercel 会处理主机和端口
