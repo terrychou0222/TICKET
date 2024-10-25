@@ -51,7 +51,7 @@ def check_tickets():
                 print("消息发送成功")
 
             current_time = time.time()
-            if current_time - last_reminder_time >= 1800:  # 每30分钟
+            if current_time - last_reminder_time >= 2:  # 每30分钟
                 line_bot_api.push_message(
                     "你的_USER_ID",
                     TextSendMessage(text=f"目前時間: {now.strftime('%Y-%m-%d %H:%M:%S')} + 程序仍在運行中...")
