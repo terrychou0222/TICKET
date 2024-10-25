@@ -77,10 +77,5 @@ def home():
     return 'Hello, World!'
 
 if __name__ == "__main__":
-    # 启动票务检查线程
-    ticket_thread = threading.Thread(target=check_tickets)
-    ticket_thread.daemon = True  # 设置为守护线程
-    ticket_thread.start()
-
-    # 启动 Flask 应用
+   
     app.run()
