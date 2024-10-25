@@ -68,7 +68,7 @@ def check_tickets():
 def home():
     print("hi")
     
-    return '你好非！'
+    return '你好22222非！'
     
     
 
